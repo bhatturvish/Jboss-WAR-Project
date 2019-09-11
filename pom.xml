@@ -22,7 +22,7 @@
    </distributionManagement>
    
   <build>
-    <finalName>demo</finalName>
+    <finalName>jbossdemo</finalName>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
