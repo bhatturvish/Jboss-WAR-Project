@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.jboss-war.com</groupId>
-  <artifactId>jbossdemo</artifactId>
+  <groupId>jboss-war</groupId>
+  <artifactId>jboss-demo</artifactId>
   <packaging>war</packaging>
-  <version>1.0</version>
+  <version>1.1</version>
   <name>Demo Maven Webapp</name>
-  <url>https://github.com/tongueroo/demo-java</url>
+ <!-- <url>https://github.com/tongueroo/demo-java</url> -->
   
   <distributionManagement>
     <repository>
@@ -22,8 +22,8 @@
    </distributionManagement>
    
   <build>
-    <finalName>jbossdemo</finalName>
-    <sourceDirectory>src</sourceDirectory>
+   <!-- <finalName>jbossdemo</finalName>
+    <sourceDirectory>src</sourceDirectory> -->
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
