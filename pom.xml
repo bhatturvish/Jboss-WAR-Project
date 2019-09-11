@@ -61,7 +61,7 @@
 			<version>1.2.0</version>
 				<configuration>
 					<container>
-						<containerId>JBoss 7.1.x</containerId>
+						<containerId>jboss7x</containerId>
 						<type>remote</type>
 						<timeout>600000</timeout>
 						<append>false</append>
