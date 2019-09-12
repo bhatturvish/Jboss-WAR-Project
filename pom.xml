@@ -56,18 +56,28 @@
 	    </plugin>
 		
 	<plugin>
-			<groupId>org.codehaus.cargo</groupId>
-			<artifactId>cargo-maven2-plugin</artifactId>
-			<version>1.2.0</version>
-				<configuration>
-					<container>
-						<containerId>jboss7x</containerId>
-						<type>remote</type>
-						<timeout>600000</timeout>
-						<append>false</append>
-					</container>
-				</configuration>
-  </plugin> 
+  <groupId>org.codehaus.cargo</groupId>
+  <artifactId>cargo-maven2-plugin</artifactId>
+  <version>1.2.0</version>
+  <configuration>
+    <container>
+      <containerId>jboss71x</containerId>
+      <home>/opt/jboss/jboss-as/</home>
+       <timeout>600000</timeout>
+        <append>false</append>
+    </container>
+    <configuration>
+      <type>existing</type>
+      <home>/opt/jboss/jboss-as/</home>
+      <properties>
+       <cargo.servlet.port>9999</cargo.servlet.port>
+       <cargo.jboss.configuration>default</cargo.jboss.configuration>
+        <cargo.hostname>10.128.0.3</cargo.hostname>
+        <cargo.rmi.port>1099</cargo.rmi.port>
+      </properties>
+    </configuration>
+  </configuration>
+</plugin>
   </plugins>
   </build>
    
